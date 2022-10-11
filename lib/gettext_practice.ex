@@ -101,4 +101,9 @@ defmodule GettextPractice do
     gettext(@module_attr)
     |> IO.inspect()
   end
+
+  def use_api do
+    Gettext.gettext(GettextPractice.Gettext, "Confirm")
+    |> IO.inspect()
+  end
 end
