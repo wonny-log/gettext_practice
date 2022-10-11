@@ -1,0 +1,2 @@
+msgid "Wrong Request"
+msgstr "誤った要求"
