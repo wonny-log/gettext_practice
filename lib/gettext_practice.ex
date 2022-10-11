@@ -116,4 +116,10 @@ defmodule GettextPractice do
     # result: "確認する, 確かめる."
     |> IO.inspect()
   end
+
+  def use_interploation do
+    gettext("%{n} Confirm", n: 4)
+    # result: "4 確認"
+    |> IO.inspect()
+  end
 end

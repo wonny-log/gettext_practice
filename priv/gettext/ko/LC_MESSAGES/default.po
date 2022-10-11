@@ -1,5 +1,5 @@
-msgid "Confirm"
-msgstr "확인"
+msgid "%{n} Confirm"
+msgstr "%{n} 확인"
 
 msgctxt "verb"
 msgid "Confirm"
