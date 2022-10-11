@@ -49,4 +49,12 @@ defmodule GettextPractice do
     )
     |> IO.inspect()
   end
+
+  def use_po_files do
+    gettext("Confirm")
+    |> IO.inspect()
+
+    dgettext("errors", "Wrong Request")
+    |> IO.inspect()
+  end
 end
