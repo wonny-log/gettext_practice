@@ -1,2 +1,6 @@
 msgid "Confirm"
 msgstr "確認"
+
+msgctxt "verb"
+msgid "Confirm"
+msgstr "確認する, 確かめる."

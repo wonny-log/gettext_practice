@@ -106,4 +106,14 @@ defmodule GettextPractice do
     Gettext.gettext(GettextPractice.Gettext, "Confirm")
     |> IO.inspect()
   end
+
+  def use_context do
+    gettext("Confirm")
+    # result: "確認"
+    |> IO.inspect()
+
+    pgettext("verb", "Confirm")
+    # result: "確認する, 確かめる."
+    |> IO.inspect()
+  end
 end

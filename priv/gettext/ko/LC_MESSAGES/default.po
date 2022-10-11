@@ -1,2 +1,6 @@
 msgid "Confirm"
 msgstr "확인"
+
+msgctxt "verb"
+msgid "Confirm"
+msgstr "확인하다."
