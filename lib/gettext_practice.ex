@@ -95,4 +95,10 @@ defmodule GettextPractice do
     # result: "確認"
     |> IO.inspect()
   end
+
+  @module_attr "Confirm"
+  def use_module_attribute do
+    gettext(@module_attr)
+    |> IO.inspect()
+  end
 end
