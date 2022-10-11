@@ -57,4 +57,42 @@ defmodule GettextPractice do
     dgettext("errors", "Wrong Request")
     |> IO.inspect()
   end
+
+  def change_locale do
+    Gettext.get_locale()
+    # result: "ko"
+    |> IO.inspect()
+
+    Gettext.get_locale(GettextPractice.Gettext)
+    # result: "ja"
+    |> IO.inspect()
+
+    Gettext.put_locale("en")
+
+    Gettext.get_locale()
+    # result: "en"
+    |> IO.inspect()
+
+    gettext("Confirm")
+    # result: "Confirm"
+    |> IO.inspect()
+
+    Gettext.get_locale(GettextPractice.Gettext)
+    # result: "en"
+    |> IO.inspect()
+
+    Gettext.put_locale(GettextPractice.Gettext, "ja")
+
+    Gettext.get_locale(GettextPractice.Gettext)
+    # result: "ja"
+    |> IO.inspect()
+
+    Gettext.get_locale()
+    # result: "en"
+    |> IO.inspect()
+
+    gettext("Confirm")
+    # result: "確認"
+    |> IO.inspect()
+  end
 end
