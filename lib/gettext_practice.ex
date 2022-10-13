@@ -122,4 +122,16 @@ defmodule GettextPractice do
     # result: "4 確認"
     |> IO.inspect()
   end
+
+  def use_pluralization do
+    Gettext.put_locale("ko")
+
+    ngettext("Apple", "%{n} Apples", 1)
+    # result: "Un Apple"
+    |> IO.inspect()
+
+    ngettext("Apple", "%{n} Apples", 4)
+    # result: "4 Apples"
+    |> IO.inspect()
+  end
 end
