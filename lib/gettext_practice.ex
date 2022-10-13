@@ -134,4 +134,14 @@ defmodule GettextPractice do
     # result: "4 Apples"
     |> IO.inspect()
   end
+
+  def empty_translation do
+    Gettext.put_locale("ko")
+
+    ngettext("Empty", "Plural Empty", 1)
+    |> IO.inspect()
+
+    ngettext("Empty", "Plural Empty", 2)
+    |> IO.inspect()
+  end
 end
